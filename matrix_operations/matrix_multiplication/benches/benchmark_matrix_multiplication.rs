@@ -13,7 +13,7 @@ fn benchmark_matrix_multiplication(crit: &mut Criterion) {
     let a = Matrix::new(m, k, initial_value);
     let b = Matrix::new(k, n, initial_value);
 
-    let mut group = crit.benchmark_group("matrix_multiplication-1500x1500x1500");
+    let mut group = crit.benchmark_group("matrix_multiplication-1000x1000x1000");
     group.measurement_time(std::time::Duration::new(10, 0));
     group.sample_size(10);
 
