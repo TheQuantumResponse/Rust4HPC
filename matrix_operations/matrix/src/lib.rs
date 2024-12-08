@@ -5,7 +5,7 @@ pub struct Matrix<T> {
     pub ncols: usize,
 }
 
-impl<T: Clone> Matrix<T> {
+impl<T: Copy> Matrix<T> {
     pub fn new(nrows: usize, ncols: usize, initial_value: T) -> Self {
         Matrix {
             elements: vec![initial_value; nrows * ncols],
