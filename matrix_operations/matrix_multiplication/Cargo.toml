@@ -1,0 +1,14 @@
+[package]
+name = "matrix_multiplication"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+matrix = {path = "../matrix" }
+
+[dev-dependencies]
+criterion = "0.4"
+
+[[bench]]
+name = "benchmark_matrix_multiplication"
+harness = false
