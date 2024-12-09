@@ -5,6 +5,7 @@ edition = "2021"
 
 [dependencies]
 matrix = {path = "../matrix" }
+ndarray = "0.16.1"
 
 [dev-dependencies]
 criterion = "0.4"
